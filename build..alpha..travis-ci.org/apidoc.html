@@ -1,0 +1,932 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/shakacode/bootstrap-loader#readme"
+
+    >bootstrap-loader (v2.0.0)</a>
+</h1>
+<h4>Boostrap for Webpack</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader">module bootstrap-loader</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>bootstrap_config</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>buildExtractStylesLoader</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>checkBootstrapVersion</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>createBootstrapImport</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>createBootstrapRequire</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>createRequire</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>createUserImport</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>fileExists</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>getEnvProp</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>getFontsPath</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>joinLoaders</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>processModules</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>processStyleLoaders</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>resolveModule</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>selectModules</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">bootstrap-loader.</span>selectUserModules</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.bootstrap_config">module bootstrap-loader.bootstrap_config</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.bootstrap_config.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.bootstrap_config.</span>default
+            <span class="apidocSignatureSpan">(_ref)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.buildExtractStylesLoader">module bootstrap-loader.buildExtractStylesLoader</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.buildExtractStylesLoader.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.buildExtractStylesLoader.</span>default
+            <span class="apidocSignatureSpan">(loaders)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.checkBootstrapVersion">module bootstrap-loader.checkBootstrapVersion</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.checkBootstrapVersion.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.checkBootstrapVersion.</span>default
+            <span class="apidocSignatureSpan">(bootstrapVersion, bootstrapPath)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.createBootstrapImport">module bootstrap-loader.createBootstrapImport</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.createBootstrapImport.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.createBootstrapImport.</span>default
+            <span class="apidocSignatureSpan">(module, bootstrapVersion, bootstrapPath)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.createBootstrapRequire">module bootstrap-loader.createBootstrapRequire</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.createBootstrapRequire.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.createBootstrapRequire.</span>default
+            <span class="apidocSignatureSpan">(module, bootstrapVersion, bootstrapPath)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.createRequire">module bootstrap-loader.createRequire</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.createRequire.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.createRequire.</span>default
+            <span class="apidocSignatureSpan">(module)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.createUserImport">module bootstrap-loader.createUserImport</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.createUserImport.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.createUserImport.</span>default
+            <span class="apidocSignatureSpan">(module, webpack)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.fileExists">module bootstrap-loader.fileExists</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.fileExists.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.fileExists.</span>default
+            <span class="apidocSignatureSpan">(file)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.getEnvProp">module bootstrap-loader.getEnvProp</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.getEnvProp.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.getEnvProp.</span>default
+            <span class="apidocSignatureSpan">(prop, config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.getFontsPath">module bootstrap-loader.getFontsPath</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.getFontsPath.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.getFontsPath.</span>default
+            <span class="apidocSignatureSpan">(bootstrapRelPath)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.joinLoaders">module bootstrap-loader.joinLoaders</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.joinLoaders.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.joinLoaders.</span>default
+            <span class="apidocSignatureSpan">(loaders)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.processModules">module bootstrap-loader.processModules</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.processModules.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.processModules.</span>default
+            <span class="apidocSignatureSpan">(modules, bootstrapVersion, bootstrapPath, isScripts)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.processStyleLoaders">module bootstrap-loader.processStyleLoaders</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.processStyleLoaders.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.processStyleLoaders.</span>default
+            <span class="apidocSignatureSpan">(_ref)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.resolveModule">module bootstrap-loader.resolveModule</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.resolveModule.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.resolveModule.</span>default
+            <span class="apidocSignatureSpan">(module)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.selectModules">module bootstrap-loader.selectModules</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.selectModules.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.selectModules.</span>default
+            <span class="apidocSignatureSpan">(modules)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.bootstrap-loader.selectUserModules">module bootstrap-loader.selectUserModules</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.bootstrap-loader.selectUserModules.default">
+            function <span class="apidocSignatureSpan">bootstrap-loader.selectUserModules.</span>default
+            <span class="apidocSignatureSpan">(userModules, defaultModules)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader" id="apidoc.module.bootstrap-loader">module bootstrap-loader</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.bootstrap_config" id="apidoc.module.bootstrap-loader.bootstrap_config">module bootstrap-loader.bootstrap_config</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.bootstrap_config.default" id="apidoc.element.bootstrap-loader.bootstrap_config.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.bootstrap_config.</span>default
+        <span class="apidocSignatureSpan">(_ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function createConfig(_ref) {
+  var extractStyles = _ref.extractStyles,
+      customConfigFilePath = _ref.customConfigFilePath;
+
+  // .bootstraprc-{3,4}-default, per the DEFAULT_VERSION
+  // otherwise read user provided config file
+  var userConfigFilePath = null;
+  if (customConfigFilePath) {
+    userConfigFilePath = _path2.default.resolve(__dirname, customConfigFilePath);
+  } else {
+    var defaultLocationUserConfigPath = defaultUserConfigPath();
+    if ((0, _fileExists2.default)(defaultLocationUserConfigPath)) {
+      userConfigFilePath = defaultLocationUserConfigPath;
+    }
+  }
+
+  if (!userConfigFilePath) {
+    var _readDefaultConfig = readDefaultConfig(),
+        _defaultConfig = _readDefaultConfig.defaultConfig,
+        _configFilePath = _readDefaultConfig.configFilePath;
+
+    return {
+      bootstrapVersion: parseInt(_defaultConfig.bootstrapVersion, 10),
+      loglevel: _defaultConfig.loglevel,
+      useFlexbox: _defaultConfig.useFlexbox,
+      preBootstrapCustomizations: _defaultConfig.preBootstrapCustomizations,
+      bootstrapCustomizations: _defaultConfig.bootstrapCustomizations,
+      appStyles: _defaultConfig.appStyles,
+      useCustomIconFontPath: _defaultConfig.useCustomIconFontPath,
+      extractStyles: extractStyles || (0, _getEnvProp2.default)(&#x27;extractStyles&#x27;, _defaultConfig),
+      styleLoaders: (0, _getEnvProp2.default)(&#x27;styleLoaders&#x27;, _defaultConfig),
+      styles: (0, _selectModules2.default)(_defaultConfig.styles),
+      scripts: (0, _selectModules2.default)(_defaultConfig.scripts),
+      configFilePath: _configFilePath
+    };
+  }
+
+  var configFilePath = userConfigFilePath;
+
+  var _readUserConfig = readUserConfig(configFilePath),
+      userConfig = _readUserConfig.userConfig,
+      defaultConfig = _readUserConfig.defaultConfig;
+
+  var configDir = _path2.default.dirname(configFilePath);
+  var preBootstrapCustomizations = userConfig.preBootstrapCustomizations &#x26;&#x26; _path2.default.resolve(configDir, userConfig.preBootstrapCustomizations
+);
+  var bootstrapCustomizations = userConfig.bootstrapCustomizations &#x26;&#x26; _path2.default.resolve(configDir, userConfig.bootstrapCustomizations
+);
+  var appStyles = userConfig.appStyles &#x26;&#x26; _path2.default.resolve(configDir, userConfig.appStyles);
+
+  return {
+    bootstrapVersion: parseInt(userConfig.bootstrapVersion, 10),
+    loglevel: userConfig.loglevel,
+    preBootstrapCustomizations: preBootstrapCustomizations,
+    bootstrapCustomizations: bootstrapCustomizations,
+    appStyles: appStyles,
+    disableSassSourceMap: userConfig.disableSassSourceMap,
+    disableResolveUrlLoader: userConfig.disableResolveUrlLoader,
+    useFlexbox: userConfig.useFlexbox,
+    useCustomIconFontPath: userConfig.useCustomIconFontPath,
+    extractStyles: extractStyles || (0, _getEnvProp2.default)(&#x27;extractStyles&#x27;, userConfig),
+    styleLoaders: (0, _getEnvProp2.default)(&#x27;styleLoaders&#x27;, userConfig),
+    styles: (0, _selectUserModules2.default)(userConfig.styles, defaultConfig.styles),
+    scripts: (0, _selectUserModules2.default)(userConfig.scripts, defaultConfig.scripts),
+    configFilePath: configFilePath
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.buildExtractStylesLoader" id="apidoc.module.bootstrap-loader.buildExtractStylesLoader">module bootstrap-loader.buildExtractStylesLoader</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.buildExtractStylesLoader.default" id="apidoc.element.bootstrap-loader.buildExtractStylesLoader.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.buildExtractStylesLoader.</span>default
+        <span class="apidocSignatureSpan">(loaders)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (loaders) {
+  var fallbackLoader = void 0;
+  if (loaders[0].startsWith(&#x27;style&#x27;)) {
+    fallbackLoader = &#x27;style-loader&#x27;;
+  } else if (loaders[0].startsWith(&#x27;isomorphic-style&#x27;)) {
+    fallbackLoader = &#x27;isomorphic-style-loader&#x27;;
+  } else {
+    throw new Error(&#x27;\nIf you want to use \&#x27;extract-text-webpack-plugin\&#x27;, make sure\nyour \&#x27;styleLoaders\&#x27; array starts with \&#x27;
+style\&#x27; or \&#x27;isomorphic-style\&#x27; at index 0.\n    &#x27;);
+  }
+
+  var ExtractTextPlugin = void 0;
+  try {
+    // eslint-disable-next-line global-require
+    ExtractTextPlugin = require(&#x27;extract-text-webpack-plugin&#x27;);
+  } catch (error) {
+    throw new Error(&#x27;\nCould not find \&#x27;extract-text-webpack-plugin\&#x27; module.\nMake sure it\&#x27;s installed in your \&#x27;node_modules/\&#x27; directory.\nError: &#x27; + error + &#x27;\n&#x27;);
+  }
+  var restLoaders = loaders.slice(1).map(function (loader) {
+    return loader + &#x27;!&#x27;;
+  }).join(&#x27;&#x27;);
+  return [ExtractTextPlugin.loader().loader + &#x27;?{&#x22;omit&#x22;:1,&#x22;remove&#x22;:true}&#x27;, fallbackLoader, restLoaders].join(&#x27;!&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.checkBootstrapVersion" id="apidoc.module.bootstrap-loader.checkBootstrapVersion">module bootstrap-loader.checkBootstrapVersion</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.checkBootstrapVersion.default" id="apidoc.element.bootstrap-loader.checkBootstrapVersion.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.checkBootstrapVersion.</span>default
+        <span class="apidocSignatureSpan">(bootstrapVersion, bootstrapPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (bootstrapVersion, bootstrapPath) {
+  var npmVersion = require(_path2.default.join(bootstrapPath, &#x27;package.json&#x27;)).version;
+
+  return {
+    version: npmVersion,
+    allGood: _semver2.default.major(npmVersion) === bootstrapVersion
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.createBootstrapImport" id="apidoc.module.bootstrap-loader.createBootstrapImport">module bootstrap-loader.createBootstrapImport</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.createBootstrapImport.default" id="apidoc.element.bootstrap-loader.createBootstrapImport.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.createBootstrapImport.</span>default
+        <span class="apidocSignatureSpan">(module, bootstrapVersion, bootstrapPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (module, bootstrapVersion, bootstrapPath) {
+  var stylesPath = parseInt(bootstrapVersion, 10) === 3 ? [&#x27;assets&#x27;, &#x27;stylesheets&#x27;, &#x27;bootstrap&#x27;] : [&#x27;scss&#x27;];
+  var bootstrapModule = _path2.default.join.apply(_path2.default, [bootstrapPath].concat(stylesPath, [&#x27;_&#x27; + module]));
+  return &#x27;@import &#x22;&#x27; + bootstrapModule + &#x27;&#x22;;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.createBootstrapRequire" id="apidoc.module.bootstrap-loader.createBootstrapRequire">module bootstrap-loader.createBootstrapRequire</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.createBootstrapRequire.default" id="apidoc.element.bootstrap-loader.createBootstrapRequire.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.createBootstrapRequire.</span>default
+        <span class="apidocSignatureSpan">(module, bootstrapVersion, bootstrapPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (module, bootstrapVersion, bootstrapPath) {
+  var scriptsPath = parseInt(bootstrapVersion, 10) === 3 ? [&#x27;assets&#x27;, &#x27;javascripts&#x27;, &#x27;bootstrap&#x27;] : [&#x27;js&#x27;, &#x27;dist&#x27;];
+  var bootstrapModule = _path2.default.join.apply(_path2.default, [bootstrapPath].concat(scriptsPath, [module]));
+  return &#x27;require (&#x27; + JSON.stringify(bootstrapModule) + &#x27;);&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.createRequire" id="apidoc.module.bootstrap-loader.createRequire">module bootstrap-loader.createRequire</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.createRequire.default" id="apidoc.element.bootstrap-loader.createRequire.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.createRequire.</span>default
+        <span class="apidocSignatureSpan">(module)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (module) {
+  return &#x22;require (&#x22; + JSON.stringify(module) + &#x22;);&#x22;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.createUserImport" id="apidoc.module.bootstrap-loader.createUserImport">module bootstrap-loader.createUserImport</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.createUserImport.default" id="apidoc.element.bootstrap-loader.createUserImport.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.createUserImport.</span>default
+        <span class="apidocSignatureSpan">(module, webpack)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (module, webpack) {
+  var userModule = _path2.default.relative(webpack.context, module);
+  webpack.addDependency(module);
+  return &#x27;@import &#x22;&#x27; + userModule + &#x27;&#x22;;&#x27;;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.fileExists" id="apidoc.module.bootstrap-loader.fileExists">module bootstrap-loader.fileExists</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.fileExists.default" id="apidoc.element.bootstrap-loader.fileExists.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.fileExists.</span>default
+        <span class="apidocSignatureSpan">(file)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (file) {
+  try {
+    return _fs2.default.statSync(file).isFile();
+  } catch (error) {
+    return false;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.getEnvProp" id="apidoc.module.bootstrap-loader.getEnvProp">module bootstrap-loader.getEnvProp</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.getEnvProp.default" id="apidoc.element.bootstrap-loader.getEnvProp.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.getEnvProp.</span>default
+        <span class="apidocSignatureSpan">(prop, config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (prop, config) {
+  if (prop in config) {
+    return config[prop];
+  }
+
+  var NODE_ENV = process.env.NODE_ENV;
+  var configEnvSection = config.env &#x26;&#x26; config.env[NODE_ENV];
+
+  if (configEnvSection &#x26;&#x26; prop in configEnvSection) {
+    return configEnvSection[prop];
+  }
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.getFontsPath" id="apidoc.module.bootstrap-loader.getFontsPath">module bootstrap-loader.getFontsPath</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.getFontsPath.default" id="apidoc.element.bootstrap-loader.getFontsPath.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.getFontsPath.</span>default
+        <span class="apidocSignatureSpan">(bootstrapRelPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (bootstrapRelPath) {
+  return _path2.default.join(bootstrapRelPath, &#x27;assets&#x27;, &#x27;fonts&#x27;, &#x27;bootstrap/&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.joinLoaders" id="apidoc.module.bootstrap-loader.joinLoaders">module bootstrap-loader.joinLoaders</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.joinLoaders.default" id="apidoc.element.bootstrap-loader.joinLoaders.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.joinLoaders.</span>default
+        <span class="apidocSignatureSpan">(loaders)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (loaders) {
+  if (!Array.isArray(loaders)) {
+    throw new Error(&#x27;\n      Specify your loaders as an array.\n      Default is [\&#x27;style\&#x27;, \&#x27;css\&#x27;, \&#x27;scss\&#x27;]\n    &#x27;);
+  }
+
+  return loaders.map(function (loader) {
+    return loader + &#x27;!&#x27;;
+  }).join(&#x27;&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.processModules" id="apidoc.module.bootstrap-loader.processModules">module bootstrap-loader.processModules</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.processModules.default" id="apidoc.element.bootstrap-loader.processModules.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.processModules.</span>default
+        <span class="apidocSignatureSpan">(modules, bootstrapVersion, bootstrapPath, isScripts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (modules, bootstrapVersion, bootstrapPath, isScripts) {
+  var processModule = isScripts ? _createBootstrapRequire2.default : _createBootstrapImport2.default;
+
+  return modules.filter(function (module) {
+    return module !== &#x27;mixins&#x27;;
+  }).map(function (module) {
+    return processModule(module, bootstrapVersion, bootstrapPath);
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.processStyleLoaders" id="apidoc.module.bootstrap-loader.processStyleLoaders">module bootstrap-loader.processStyleLoaders</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.processStyleLoaders.default" id="apidoc.element.bootstrap-loader.processStyleLoaders.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.processStyleLoaders.</span>default
+        <span class="apidocSignatureSpan">(_ref)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (_ref) {
+  var loaders = _ref.loaders,
+      disableSassSourceMap = _ref.disableSassSourceMap,
+      disableResolveUrlLoader = _ref.disableResolveUrlLoader;
+
+  if (!Array.isArray(loaders)) {
+    throw new Error(&#x27;\nSpecify your loaders as an array.\nDefault is [\&#x27;style\&#x27;, \&#x27;css\&#x27;, \&#x27;sass\&#x27;]\n    &#x27;);
+  }
+
+  var loadersWithSuffix = ensureLoadersSuffix(loaders);
+
+  if (disableSassSourceMap &#x26;&#x26; disableResolveUrlLoader) {
+    return loadersWithSuffix;
+  }
+
+  // We need to match user loaders in different formats:
+  // &#x27;sass&#x27;, &#x27;sass-loader&#x27;, &#x27;sass?someParam&#x27; etc.
+  var getLoaderRegExp = function getLoaderRegExp(module) {
+    return new RegExp(&#x27;^&#x27; + (0, _escapeRegexp2.default)(module) + &#x27;(?:-loader)?(?:\\?.*)?$&#x27;);
+  };
+
+  var sassLoaderRegExp = getLoaderRegExp(&#x27;sass&#x27;);
+  var sassLoader = loadersWithSuffix.find(function (loader) {
+    return sassLoaderRegExp.test(loader);
+  });
+  var sassLoaderIndex = loadersWithSuffix.indexOf(sassLoader);
+
+  if (!disableSassSourceMap) {
+    if (!sassLoader) {
+      throw new Error(&#x27;\n        I can\&#x27;t find \&#x27;sass-loader\&#x27;.\n        Add it to array of loaders in .bootstraprc.\n      &#x27;);
+    }
+
+    var sassLoaderQuery = sassLoader.split(&#x27;?&#x27;)[1];
+
+    // We need to check if user&#x27;s loader already contains sourceMap param
+    // And if it&#x27;s not there - inject it
+    var sassLoaderWithSourceMap = void 0;
+    if (sassLoaderQuery) {
+      sassLoaderWithSourceMap = sassLoaderQuery.includes(&#x27;sourceMap&#x27;) ? sassLoader : sassLoader + &#x27;&#x26;sourceMap&#x27;;
+    } else {
+      sassLoaderWithSourceMap = sassLoader + &#x27;?sourceMap&#x27;;
+    }
+
+    // eslint-disable-next-line no-param-reassign
+    loadersWithSuffix[sassLoaderIndex] = sassLoaderWithSourceMap;
+  }
+
+  if (!disableResolveUrlLoader) {
+    var resolveUrlLoaderRegExp = getLoaderRegExp(&#x27;resolve-url&#x27;);
+    var resolveUrlLoader = loadersWithSuffix.find(function (loader) {
+      return resolveUrlLoaderRegExp.test(loader);
+    });
+
+    if (!resolveUrlLoader) {
+      loadersWithSuffix.splice(sassLoaderIndex, 0, &#x27;resolve-url-loader&#x27;);
+    }
+  }
+
+  return loadersWithSuffix;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.resolveModule" id="apidoc.module.bootstrap-loader.resolveModule">module bootstrap-loader.resolveModule</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.resolveModule.default" id="apidoc.element.bootstrap-loader.resolveModule.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.resolveModule.</span>default
+        <span class="apidocSignatureSpan">(module)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (module) {
+  try {
+    var resolvedPath = void 0;
+    _resolve2.default.sync(module, {
+      packageFilter: function packageFilter(pkg, pathToModule) {
+        resolvedPath = pathToModule;
+        return pkg;
+      }
+    });
+    return resolvedPath;
+  } catch (error) {
+    _logger2.default.debug(&#x27;resolveModule error is &#x27;, error);
+    return false;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.selectModules" id="apidoc.module.bootstrap-loader.selectModules">module bootstrap-loader.selectModules</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.selectModules.default" id="apidoc.element.bootstrap-loader.selectModules.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.selectModules.</span>default
+        <span class="apidocSignatureSpan">(modules)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (modules) {
+  return Object.keys(modules).filter(function (module) {
+    return modules[module];
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.bootstrap-loader.selectUserModules" id="apidoc.module.bootstrap-loader.selectUserModules">module bootstrap-loader.selectUserModules</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.bootstrap-loader.selectUserModules.default" id="apidoc.element.bootstrap-loader.selectUserModules.default">
+        function <span class="apidocSignatureSpan">bootstrap-loader.selectUserModules.</span>default
+        <span class="apidocSignatureSpan">(userModules, defaultModules)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">default = function (userModules, defaultModules) {
+  if (!userModules || userModules.toString().toLowerCase() === &#x27;false&#x27;) return false;
+
+  if (typeof userModules === &#x27;boolean&#x27;) {
+    return (0, _selectModules2.default)(defaultModules);
+  }
+
+  return (0, _selectModules2.default)(userModules);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
